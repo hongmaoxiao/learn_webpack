@@ -17266,7 +17266,7 @@ var transform;
 var options = {}
 options.transform = transform
 // add the styles to the DOM
-var update = __webpack_require__(8)(content, options);
+var update = __webpack_require__(11)(content, options);
 if(content.locals) module.exports = content.locals;
 // Hot Module Replacement
 if(false) {
@@ -17291,7 +17291,7 @@ exports = module.exports = __webpack_require__(7)(undefined);
 
 
 // module
-exports.push([module.i, ".hello {\n  color: red;\n  background: url(" + __webpack_require__(0) + ") left top no-repeat;\n}\n", ""]);
+exports.push([module.i, "@font-face {\n  font-family: 'MyFont';\n  src: url(" + __webpack_require__(8) + ") format('ttf'),\n       url(" + __webpack_require__(9) + ") format('eot'),\n       url(" + __webpack_require__(10) + ") format('woff');\n  font-weight: 600;\n  font-style: normal;\n}\n\n.hello {\n  color: red;\n  font-family: 'MyFont';\n  background: url(" + __webpack_require__(0) + ") left top no-repeat;\n}\n", ""]);
 
 // exports
 
@@ -17382,6 +17382,24 @@ function toComment(sourceMap) {
 /* 8 */
 /***/ (function(module, exports, __webpack_require__) {
 
+module.exports = __webpack_require__.p + "7f96f4da498ebf3a70ee730e5e74ca4e.ttf";
+
+/***/ }),
+/* 9 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "e7755764cb1fdd51f675f2b8fdac756b.eot";
+
+/***/ }),
+/* 10 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "adcb6fc8128c375378630f9b23c7ab2b.woff";
+
+/***/ }),
+/* 11 */
+/***/ (function(module, exports, __webpack_require__) {
+
 /*
 	MIT License http://www.opensource.org/licenses/mit-license.php
 	Author Tobias Koppers @sokra
@@ -17425,7 +17443,7 @@ var singleton = null;
 var	singletonCounter = 0;
 var	stylesInsertedAtTop = [];
 
-var	fixUrls = __webpack_require__(9);
+var	fixUrls = __webpack_require__(12);
 
 module.exports = function(list, options) {
 	if (typeof DEBUG !== "undefined" && DEBUG) {
@@ -17738,7 +17756,7 @@ function updateLink (link, options, obj) {
 
 
 /***/ }),
-/* 9 */
+/* 12 */
 /***/ (function(module, exports) {
 
 
